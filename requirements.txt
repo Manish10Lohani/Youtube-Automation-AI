@@ -1,0 +1,9 @@
+google-api-python-client
+pandas
+python-dotenv
+openai
+gTTS
+moviepy
+Pillow
+streamlit
+google-generativeai
