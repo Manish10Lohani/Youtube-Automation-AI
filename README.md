@@ -2,30 +2,32 @@
 
 An end-to-end AI-powered pipeline that takes a topic and genre, then automatically generates a script, voiceover, video, subtitles, and YouTube metadata — all from a single Streamlit interface.
 
----
+\---
+
+!\[YouTube Automation AI Studio](assets/backgrounds/demo.png)
 
 ## 🚀 Features
 
-- **Script generation** — genre and tone-aware narration scripts
-- **Topic suggestions** — auto-generates relevant video ideas
-- **Voiceover** — converts scripts to MP3 using text-to-speech
-- **Video creation** — assembles MP4 with genre-matched background and audio
-- **Subtitle generation** — proportional-timing SRT files synced to audio
-- **YouTube metadata** — titles, descriptions, tags, and CTAs ready to copy
+* **Script generation** — genre and tone-aware narration scripts
+* **Topic suggestions** — auto-generates relevant video ideas
+* **Voiceover** — converts scripts to MP3 using text-to-speech
+* **Video creation** — assembles MP4 with genre-matched background and audio
+* **Subtitle generation** — proportional-timing SRT files synced to audio
+* **YouTube metadata** — titles, descriptions, tags, and CTAs ready to copy
 
----
+\---
 
 ## 🛠 Tech Stack
 
-| Tool | Purpose |
-|------|---------|
-| Python 3.10+ | Core language |
-| Streamlit | Web UI dashboard |
-| MoviePy | Video and audio processing |
-| gTTS | Text-to-speech voiceover |
-| LLM API (pluggable) | Script and metadata generation |
+|Tool|Purpose|
+|-|-|
+|Python 3.10+|Core language|
+|Streamlit|Web UI dashboard|
+|MoviePy|Video and audio processing|
+|gTTS|Text-to-speech voiceover|
+|LLM API (pluggable)|Script and metadata generation|
 
----
+\---
 
 ## 📁 Project Structure
 
@@ -35,14 +37,14 @@ YouTube-Automation-AI/
 │   ├── app/
 │   │   └── dashboard.py          # Streamlit UI
 │   ├── api/
-│   │   └── llm_script_generator.py  # LLM integration
+│   │   └── llm\_script\_generator.py  # LLM integration
 │   └── automation/
-│       ├── voiceover_generator.py
-│       ├── video_creator.py
-│       ├── subtitles_generator.py
-│       ├── metadata_generator.py
-│       ├── thumbnail_text_generator.py
-│       └── topic_suggester.py
+│       ├── voiceover\_generator.py
+│       ├── video\_creator.py
+│       ├── subtitles\_generator.py
+│       ├── metadata\_generator.py
+│       ├── thumbnail\_text\_generator.py
+│       └── topic\_suggester.py
 ├── assets/
 │   └── backgrounds/              # Genre-specific background images
 ├── data/
@@ -51,9 +53,9 @@ YouTube-Automation-AI/
 └── .env                          # API keys (not committed)
 ```
 
----
+\---
 
-## ⚙️ Setup & Installation
+## ⚙️ Setup \& Installation
 
 ```bash
 # 1. Clone the repo
@@ -62,7 +64,7 @@ cd Youtube-Automation-AI
 
 # 2. Create and activate a virtual environment
 python -m venv venv
-venv\Scripts\activate        # Windows
+venv\\Scripts\\activate        # Windows
 source venv/bin/activate     # Mac/Linux
 
 # 3. Install dependencies
@@ -76,17 +78,17 @@ cp .env.example .env
 streamlit run src/app/dashboard.py
 ```
 
----
+\---
 
 ## 🔑 Environment Variables
 
 Create a `.env` file in the root directory:
 
 ```
-LLM_API_KEY=your_api_key_here
+LLM\_API\_KEY=your\_api\_key\_here
 ```
 
----
+\---
 
 ## 🎯 How It Works
 
@@ -97,19 +99,20 @@ LLM_API_KEY=your_api_key_here
 5. **SRT subtitles** are generated proportional to audio timing
 6. **YouTube metadata** (title, description, tags) is ready to copy
 
----
+\---
 
 ## 📌 Requirements
 
 See `requirements.txt`. Key dependencies:
 
-- `streamlit`
-- `moviepy`
-- `gTTS`
-- `python-dotenv`
+* `streamlit`
+* `moviepy`
+* `gTTS`
+* `python-dotenv`
 
----
+\---
 
 ## 📄 License
 
 MIT License — feel free to use and modify.
+
